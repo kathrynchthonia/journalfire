@@ -28,7 +28,8 @@ const {
   truncate,
   stripTags,
   formatDate,
-  select
+  select,
+  editIcon
 } = require('./helpers/hbs');
 
 // Map Global promises
@@ -57,7 +58,8 @@ app.engine('handlebars', exphbs({
     truncate,
     stripTags,
     formatDate:formatDate,
-    select:select
+    select:select,
+    editIcon
   },
   defaultLayout: 'main'
 }));
